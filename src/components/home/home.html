@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <h2>Cloud-Score</h2>
+    </div>
+    <div class="row">
+        <div v-for="item in providers" class="content col s6 m6 l3">
+            <div class="card hoverable">
+                <div class="card-image contourn">
+                    <img :src="'https://cloudscorebcfunc.blob.core.windows.net/imgs/' + item.keyword + '.png'" :alt="item.name">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">{{item.keyword}}</span>
+                    <h1 class="score flow-text">{{item.scores[0].round}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="chartbar" ref="bar"></div>
+    </div>
+    <div class="row">
+        <div class="card-panel">
+            <p class="flow-text">
+                Cloud score it is calculated based on the sum of the Natual logaritim of all the diferent scores.
+            </p>
+            <p class="flow-text">
+                The scores that are currently used are from <a href="https://trends.google.co.uk/trends/">google trends</a> and from <a href="https://www.reed.co.uk/">reed</a>
+            </p>
+            <ul>
+                <li class="flow-text">
+                    Google Trends: Based on the google trends result for that particular date, this can go from 0 to 100 on every day and and are acumulated over 10 days <br />
+                </li>
+                <li class="flow-text">
+                    Reed: Based on the number of public jobs being announced in UK on that data that are requiring that ability. <br />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

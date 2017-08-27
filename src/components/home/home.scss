@@ -1,0 +1,21 @@
+.content h1 {
+    text-align: center;
+}
+
+.score {
+    text-align: center;
+    @extend .green-text;
+    @extend .accent-3;
+    font-weight: 500;
+}
+
+.contourn {
+    padding: 10px;
+    min-height: 160px;
+}
+
+.contourn img {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}

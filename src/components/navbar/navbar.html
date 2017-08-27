@@ -1,0 +1,17 @@
+<nav>
+    <div class="nav-wrapper light-blue">
+        <a class="brand-logo right" href="#">Cloud score</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <ul class="left hide-on-med-and-down">
+            <li v-for="link in links" v-bind:class="{'active' : $route.path == link.path}">
+                <router-link v-bind:to="link.path">{{link.name}}</router-link>
+            </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li v-for="link in links" v-bind:class="{'active' : $route.path == link.path}">
+                <router-link v-bind:to="link.path">{{link.name}}</router-link>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,28 @@
+Senior dev - been - there for 11 years
+Nick - 
+Graham - Both of them
+They are about sata cleaning 
+they are 95% getting their product to the cloud.
+Originally visual foxpro
+People want to use it on azure. 
+Cannot use currently azure database.
+
+App service hosting the website
+Virtual machines behind the scenes 
+Schedules and processing vms
+Upload the data to app service sending the data to fileshares encrypt the data and store the secret on keycault
+app service that access critical data. 
+processing virtual machines. 
+batch process that will get that.
+.net processing batch processing. 
+implemented their own queueing system.-implemented their own queuing system
+app virtual machines and key-vault.
+azure file-share.
+ds-12 because they need large amount of data.
+100% of the time processing cluster being used - being used.
+
+https://docs.microsoft.com/en-us/azure/batch/batch-dotnet-get-started
+https://docs.microsoft.com/en-us/azure/batch/batch-low-pri-vms
+https://azure.microsoft.com/en-gb/pricing/details/sql-database/
+https://azure.microsoft.com/en-gb/services/service-bus/
+https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions

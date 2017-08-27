@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cloud Score</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- build:remove -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css" rel="stylesheet">
+  <!-- /build -->
+  <!-- build:css css/main.min.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- /build -->
+</head>
+
+<body>
+
+<div id="app-main">
+  <navbar :inverted="false"></navbar>
+  <router-view>loading...</router-view>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js"></script>
+<!-- build:js js/main.min.js -->
+<script src="main.js"></script>
+<!-- /build -->
+
+</body>
+</html>
